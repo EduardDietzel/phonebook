@@ -13,6 +13,7 @@ public class FirstSeleniumTest {
     WebDriver driver;
     By emailField = By.cssSelector("[placeholder=\"Email\"]");
     By passwordField = By.cssSelector("[placeholder=\"Password\"]");
+    By confirmPasswordField = By.cssSelector("[ng-reflect-name=\"confirm-password\"]");
 
     // before
     @BeforeClass
@@ -35,27 +36,41 @@ public class FirstSeleniumTest {
     public void loginWithValidData() {
         driver.findElement(By.name("email")).sendKeys("test@gmail.com");
         driver.findElement(By.cssSelector("[placeholder=\"Password\"]")).sendKeys("test@gmail.com");
-
         driver.findElement(By.cssSelector(".btn.btn-info"));
+    }
 
+    @Test
+    public void locators() {
+        driver.findElement(By.name("email")).sendKeys("test@gmail.com");
+        driver.findElement(By.cssSelector("[placeholder=\"Password\"]")).sendKeys("test@gmail.com");
+        driver.findElement(By.cssSelector("/"));
+
+        driver.findElement(By.id("irstname"));
+        driver.findElement(By.cssSelector("#firstname input"));
+
+        driver.findElement(By.tagName("p"));
+        driver.findElement(By.cssSelector("p"));
+        driver.findElement(By.xpath("//*[@id=\"registration-form\"]/div[1]/div/input"));
     }
 
     @Test
     public void registerNewUser() throws InterruptedException {
         String userData = "test@gmail.com";
+
         driver.findElement(By.id("login-form")).isDisplayed();
         driver.findElement(By.cssSelector("[href=\"/user/registration\"]")).click();
-        Thread.sleep(1000);
+        driver.findElement(By.id("registration-form")).isDisplayed();
+            Thread.sleep(1000);
         // fillField(userData, By.cssSelector("[placeholder=\"Email\"]"));
         fillField(userData, emailField);
-        Thread.sleep(1000);
+            Thread.sleep(1000);
         fillField(userData, By.cssSelector("[placeholder=\"Password\"]"));
         // driver.findElement(By.cssSelector("[placeholder=\"Password\"]")).sendKeys(userData);  // это мы удаляем после замены методом fillField
-        Thread.sleep(1000);
-        fillField(userData, By.cssSelector("[ng-reflect-name=\"confirm-password\"]"));
+            Thread.sleep(1000);
+        fillField(userData, By.cssSelector("[ng-reflect-name=\"confirm_password\"]"));
         // driver.findElement(By.name("confirm-password")).sendKeys(userData);
         // driver.findElement(By.name("//*[@name=\"confirm-password\"]")).sendKeys(userData);   // это по XPath
-        Thread.sleep(1000);
+            Thread.sleep(1000);
         driver.findElement(By.xpath("//*[@type=\"submit\"]")).click();
 
     }
