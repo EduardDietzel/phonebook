@@ -4,9 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fb686c3-2f79-4c50-8f2c-6e01553dab73" name="Changes" comment="">
+    <list default="true" id="5fb686c3-2f79-4c50-8f2c-6e01553dab73" name="Changes" comment="Added new Api test">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ChangeLanguage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/ContactTableTast.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/FirstSeleniumTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/FirstSeleniumTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/RegisterNewUserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/RegisterNewUserTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/TestBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CreateContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CreateContactTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/FirstSeleniumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FirstSeleniumTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegisterNewUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegisterNewUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,29 +59,77 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "last_opened_file_path": "C:/Users/bande/IdeaProjects/phonebook",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.language"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/bande/IdeaProjects/phonebook&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\bande\IdeaProjects\phonebook\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.FirstSeleniumTest.registerNewUser">
-    <configuration name="FirstSeleniumTest.loginWithValidData" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.CreateContactTest">
+    <configuration name="AddNewContactTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="phonebook.test" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.tests.contacts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="api.tests.contacts" />
+      <option name="MAIN_CLASS_NAME" value="api.tests.contacts.AddNewContactTest" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateContactTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="phonebook.test" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstSeleniumTest" />
-      <option name="METHOD_NAME" value="loginWithValidData" />
+      <option name="MAIN_CLASS_NAME" value="CreateContactTest" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateContactTest.CreateNewContact" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="phonebook.test" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CreateContactTest" />
+      <option name="METHOD_NAME" value="CreateNewContact" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
@@ -84,14 +144,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstSeleniumTest.registerNewUser" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RegisterNewUserTest.registerNewUserWithInvalidData" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="phonebook.test" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstSeleniumTest" />
-      <option name="METHOD_NAME" value="registerNewUser" />
+      <option name="MAIN_CLASS_NAME" value="RegisterNewUserTest" />
+      <option name="METHOD_NAME" value="registerNewUserWithInvalidData" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
@@ -106,14 +166,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstSeleniumTest.test" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RegisterNewUserTest.registerNewUserWithValidData" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="phonebook.test" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstSeleniumTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="RegisterNewUserTest" />
+      <option name="METHOD_NAME" value="registerNewUserWithValidData" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
@@ -150,9 +210,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.FirstSeleniumTest.registerNewUser" />
-        <item itemvalue="TestNG.FirstSeleniumTest.loginWithValidData" />
-        <item itemvalue="TestNG.FirstSeleniumTest.test" />
+        <item itemvalue="TestNG.CreateContactTest" />
+        <item itemvalue="TestNG.CreateContactTest.CreateNewContact" />
+        <item itemvalue="TestNG.AddNewContactTest" />
+        <item itemvalue="TestNG.RegisterNewUserTest.registerNewUserWithInvalidData" />
+        <item itemvalue="TestNG.RegisterNewUserTest.registerNewUserWithValidData" />
       </list>
     </recent_temporary>
   </component>
@@ -165,6 +227,28 @@
       <option name="presentableId" value="Default" />
       <updated>1673521630013</updated>
     </task>
+    <task id="LOCAL-00001" summary="first commit chenges in Test registerNewUser">
+      <created>1674555419089</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674555419089</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added CreateNewContact test">
+      <created>1674740986822</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674740986822</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added new Api test">
+      <created>1675172672731</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675172672733</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,6 +273,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit chenges in Test registerNewUser" />
+    <MESSAGE value="Added error message for RegisterNewUserTest" />
+    <MESSAGE value="Added CreateNewContact test" />
+    <MESSAGE value="Added new Api test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new Api test" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

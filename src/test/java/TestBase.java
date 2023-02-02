@@ -3,6 +3,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -38,6 +39,21 @@ public class TestBase {
             exception.printStackTrace();
             return false;
         }
+    }
+
+    public boolean isElementClickable(By by) {
+        try {
+            driver.findElement(by);
+            return true;
+        } catch (NoSuchElementException exception) {
+            exception.printStackTrace();
+            return false;
+        }
+    }
+
+    public void checkItemText(By locator, String expectedText, String err) {
+        String actualText = driver.findElement(locator).getText();
+        Assert.assertEquals(actualText, expectedText, err);
     }
 
     @AfterMethod

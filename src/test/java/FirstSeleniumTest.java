@@ -13,7 +13,7 @@ public class FirstSeleniumTest {
     WebDriver driver;
     By emailField = By.cssSelector("[placeholder=\"Email\"]");
     By passwordField = By.cssSelector("[placeholder=\"Password\"]");
-    By confirmPasswordField = By.cssSelector("[ng-reflect-name=\"confirm-password\"]");
+    By confirmPasswordField = By.cssSelector("[ng-reflect-name=\"confirm_password\"]");
 
     // before
     @BeforeClass
@@ -45,7 +45,7 @@ public class FirstSeleniumTest {
         driver.findElement(By.cssSelector("[placeholder=\"Password\"]")).sendKeys("test@gmail.com");
         driver.findElement(By.cssSelector("/"));
 
-        driver.findElement(By.id("irstname"));
+        driver.findElement(By.id("firstname"));
         driver.findElement(By.cssSelector("#firstname input"));
 
         driver.findElement(By.tagName("p"));
@@ -86,7 +86,7 @@ public class FirstSeleniumTest {
     public void tearDown() throws InterruptedException {
         Thread.sleep(10);
         if (driver != null) {
-            // driver.quit();
+            driver.quit();
         }
     }
 }
